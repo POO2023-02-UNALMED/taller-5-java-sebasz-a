@@ -6,21 +6,16 @@ public class Ave extends Animal{
 	public int aguilas;
 	private String colorPlumas;
 	
-	Ave(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona, Ave[] listado, int halcones, int aguilas, String colorPlumas) {
-		this.totalAnimales = totalAnimales;
+	Ave(String nombre, int edad, String habitat, String genero, String colorPlumas) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona = zona;
-		this.listado = listado;
-		this.halcones = halcones;
-		this.aguilas = aguilas;
 		this.colorPlumas = colorPlumas;
 	}
 	
 	Ave() {
-		this(Ave[],0,0,"");
+		
 	}
 	
 	public void cantidadAves() {

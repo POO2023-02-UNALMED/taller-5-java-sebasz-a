@@ -7,22 +7,17 @@ public class Pez extends Animal{
 	private String colorEscamas;
 	private int cantidadAletas;
 	
-	Pez(int totalAnimales, String nombre, int edad, String habitat, String genero, Zona zona, Pez[] listado, int salmones, int bacalaos, String colorEscamas, int cantidadAletas) {
-		this.totalAnimales = totalAnimales;
+	Pez(String nombre, int edad, String habitat, String genero,String colorEscamas, int cantidadAletas) {
 		this.nombre = nombre;
 		this.edad = edad;
 		this.habitat = habitat;
 		this.genero = genero;
-		this.zona = zona;
-		this.listado = listado;
-		this.salmones = salmones;
-		this.bacalaos = bacalaos;
 		this.colorEscamas = colorEscamas;
 		this.cantidadAletas = cantidadAletas;
 	}
 	
 	Pwz() {
-		this(Pez[],0,0,"",0);
+		
 	}
 	
 	public void cantidadPeces() {
