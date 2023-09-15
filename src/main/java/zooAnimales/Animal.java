@@ -1,7 +1,7 @@
 package zooAnimales;
 
 public class Animal {
-	protected int totalAnimales;
+	private int totalAnimales;
 	private String nombre;
 	private int edad;
 	private String habitat;
@@ -24,7 +24,7 @@ public class Animal {
 		
 	}
 	public void totalPorTipo() {
-		
+		System.out.println("Mamiferos: " + Mamifero.cantidadMamiferos);
 	}
 	public String toString() {
 		

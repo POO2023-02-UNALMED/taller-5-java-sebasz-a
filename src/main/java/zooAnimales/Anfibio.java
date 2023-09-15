@@ -1,7 +1,8 @@
 package test;
+import java.util.ArrayList;
 
-public class Anfibio extends Animales{
-	private Anfibio[] listado;
+public class Anfibio extends Animal{
+	private ArrayList<Anfibio> listado;
 	public int ranas;
 	public int salamandras;
 	private String colorPiel;
@@ -17,11 +18,11 @@ public class Anfibio extends Animales{
 	}
 	
 	Anfibio() {
-		
+		listado.add(this);
 	}
 	
-	public void cantidadAnfibios() {
-		
+	public int cantidadAnfibios() {
+		return listado.size();
 	}
 	public void movimiento() {
 		
