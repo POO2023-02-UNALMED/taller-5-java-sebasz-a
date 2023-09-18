@@ -83,11 +83,11 @@ public class Animal {
 	}
 
 	public Zona getZona() {
-		return zona;
+		return zona.get(0);
 	}
 
 	public void setZona(Zona zona) {
-		this.zona = zona;
+		this.zona.add(zona);
 	}
 	
 }
