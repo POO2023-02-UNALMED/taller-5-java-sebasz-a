@@ -8,7 +8,7 @@ public class Animal {
 	private int edad;
 	private String habitat;
 	private String genero;
-	private Zona zona;
+	private ArrayList<Zona> zona = new ArrayList<Zona>(1);
 	
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre = nombre;
@@ -26,14 +26,14 @@ public class Animal {
 		return "desplazarse";
 	}
 	public static String totalPorTipo() {
-		return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n"
-		+ "Aves: " + Ave.cantidadAves() + "\n"
-		+ "Reptiles: " + Reptil.cantidadReptiles() + "\n"
-		+ "Peces: " + Pez.cantidadPeces()+ "\n"
-		+ "Anfibios: " + Anfibio.cantidadAnfibios() + "\n";
+		return "Mamiferos: " + Mamifero.getListado().size() + "\n"
+		+ "Aves: " + Ave.getListado().size() + "\n"
+		+ "Reptiles: " + Reptil.getListado().size() + "\n"
+		+ "Peces: " + Pez.getListado().size()+ "\n"
+		+ "Anfibios: " + Anfibio.getListado().size();
 	}
 	public String toString() {
-		if (this.zona == null) {
+		if (zona.isEmpty()) {
 			return "Mi nombre es " + this.nombre + ", tengo una edad de " + this.edad + ", habito en " + this.habitat + " y mi genero es " + this.genero;
 		}
 		else{
